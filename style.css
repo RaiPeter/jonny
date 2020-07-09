@@ -1,0 +1,158 @@
+:root {
+    --pink : rgb(216, 180, 186);
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.container{
+    max-width: 1240px;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+header h1{
+    text-align: center;
+    margin-top: 1em;
+}
+nav{
+    margin-top: 2em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* second header */
+.second-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.second-header h1{
+ margin-top: 1em;
+ font-size: 3em;
+ color: var(--pink);
+}
+.second-header p{
+    margin-top: 1em;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+/* images */
+.first-image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.first-image img{
+    width: 100%;
+ object-fit: cover;
+ 
+ transform: translateY(-20%);
+ /* transform: scale(1); */
+ 
+}
+.second-image{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+.second-image img{
+    width: 100%;
+ object-fit: cover;
+ transform: translateY(-5%);
+}
+.second-image .img-texts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+.img-texts h1{
+    margin-bottom: 0.5em;
+}
+.img-texts p{
+    text-decoration: underline;
+}
+.img-texts p  a{
+    color: white;
+}
+/* cards */
+.img-cards{
+    width: 100%;
+    display: flex;
+}
+.firstcard {
+    width: 33.35%;
+    text-align: center;
+}
+.firstcard-img{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.firstcard-img img{
+    object-fit: contain;
+    height: 420px;
+}
+.firstcard h1{
+    margin-top: 2em;
+    font-size: 1em;
+    color: var(--pink);
+}
+.firstcard p{
+    margin-top: 2em;
+    font-size: 0.8em;
+}
+#second{
+    transform: translateY(-30%);
+}
+
+/* collage */
+.collage-gallery{
+    display: flex;
+    justify-content: center;
+}
+.collage{
+margin-top: 3em;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+}
+.collage img{
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+}
