@@ -410,16 +410,15 @@ footer .social-links{
         display: none;
     }
     .topnav a.icon {
-      /* float: right; */
+      float: right;
       display: block;
+      position: absolute;
       font-size: 1.5em;
+      right: 0.5em;
     }
   }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 479px) {
-    .container{
-        width: 100%;
-    }
     
     
     .topnav.responsive {
@@ -427,9 +426,9 @@ footer .social-links{
     }
     .topnav.responsive a.icon {
       position: absolute;
-      right: -75%;
-      /* right: 0; */
-      top: -1.6em;
+      /* right: -125%; */
+      right: 0.5em;
+      top: 1.2em;
     }
     .topnav.responsive a {
       display: block;
@@ -444,7 +443,7 @@ header .responsive{
         flex-direction: column;
         position: absolute;
 top: 4.3em;
-margin-left: 35%;
+margin-left: 36%;
 
 }
     .topnav.responsive ul li{
