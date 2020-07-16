@@ -25,7 +25,7 @@ font-weight: lighter;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: murden_cf_extraBold ,Arial, Helvetica, sans-serif;
+    font-family:arca_majora_3_bold ,Arial, Helvetica, sans-serif;
 }
 body{
     display: flex;
@@ -38,13 +38,10 @@ body{
 }
 
 header{
-    /* width: 100%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: right; */
+    position: relative;
     background-color: black;
     color: white;
-    z-index: 100;
+    z-index: 10;
 
 }
 /* sticky menu */
@@ -372,7 +369,10 @@ margin-bottom: 2em;
     line-height: 1.5em;
 margin-bottom: 2em;
 }
-
+.aboutus img{
+    height: 300px;
+    width: 80%;
+}
 /* fooqter */
 footer{
     padding: 1.5em 2em;
@@ -405,36 +405,48 @@ footer .social-links{
   }
 
 /* media queries for phone */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
     .topnav a{
         display: none;
     }
     .topnav a.icon {
-      float: right;
+      /* float: right; */
       display: block;
       font-size: 1.5em;
     }
   }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
+    .container{
+        width: 100%;
+    }
+    
+    
     .topnav.responsive {
         position: relative;
     }
     .topnav.responsive a.icon {
       position: absolute;
-      right: 0.5em;
-      top: 1.1em;
+      right: -75%;
+      /* right: 0; */
+      top: -1.6em;
     }
     .topnav.responsive a {
       display: block;
-      /* width: 100%; */
-    }
+  }
+  
+header .responsive{
+    height: 220px;
+    position: relative;
+    /* transition: all ease 1s ease-in-out; */
+}
     .topnav.responsive ul{
-        display: flex;
         flex-direction: column;
-    margin-top: 2.5em;
-    margin-right: 11em;
-    }
+        position: absolute;
+top: 4.3em;
+margin-left: 35%;
+
+}
     .topnav.responsive ul li{
         margin-bottom: 0.5em;
     }
