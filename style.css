@@ -81,6 +81,10 @@ nav a{
     text-decoration: none;
     color: white;
 }
+nav a:hover{
+    color: var(--pink);
+    cursor: pointer;
+}
 
 /* second header */
 .second-header{
@@ -372,6 +376,7 @@ margin-bottom: 2em;
 .aboutus img{
     height: 300px;
     width: 80%;
+    object-fit: cover;
 }
 /* fooqter */
 footer{
