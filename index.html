@@ -17,27 +17,31 @@
                 </h1>
                 <ul>
                     <li><a onclick="openNav()" href="#home">Home</a></li>
-                    <li><a onclick="openNav()" href="#services">BookOnline</a></li>
-                    <li><a onclick="openNav()" href="#">Blog</a></li>
-                    <li><a onclick="openNav()" href="#">Shop</a></li>
-                    <li><a onclick="openNav()" href="#contactus">Contact Us</a></li>
+                    <li><a onclick="openNav()" href="#work">Work</a></li>
+                    <li><a onclick="openNav()" href="#services">Services</a></li>
+                    <li><a onclick="openNav()" href="#about">About</a></li>
+                    <li><a onclick="openNav()" href="#contactus">Contact</a></li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="openNav()">
                     <i class="fa fa-bars"></i>
-                  </a>
+                </a>
             </nav>
         </header>
         <div class="second-header">
-            <h1>The Studio VDO Way</h1>
-            <p>Authentic creative content</p>
-            <!-- <video autoplay muted width="100%" >
-                <source src="assets/videos/videoplayback (1).mp4" >
-                    <source src="assets/videos/G-Eazy - Marilyn ft. Dominique LeJeune (Official Music Video).mp4">
-                    </video> -->
+            <div class="second-header-video">
+                <video autoplay muted loop  width="100%" >
+                    <!-- <source src="assets/videos/videoplayback (1).mp4" > -->
+                        <source src="assets/videos/G-Eazy - Marilyn ft. Dominique LeJeune (Official Music Video).mp4">
+                        </video>
+                    </div>                   
+                    <div class="text">
+                        <h1>The Studio VDO Way</h1>
+                        <p>Authentic creative content</p>    
+                    </div>
                 </div>
-                <div class="first-image">
+                <!-- <div class="first-image">
                     <img src="assets/img/marco-xu-ToUPBCO62Lw-unsplash.jpg" alt="" srcset="">
-                </div>
+                </div> -->
                 <div class="second-image">
                     <img src="assets/img/jakob-owens-2Aq35JCbNFA-unsplash.jpg" alt="" srcset="">
                     <div class="img-texts">
@@ -47,7 +51,37 @@
                     
                 </div>
                 
-                <div class="img-cards">
+                <div id="work" class="work">
+                    <div class="work-texts">
+                        <h1>Our Work</h1>
+                        <p>We work pretty hard lol</p>
+                    </div>
+                    <div class="collage-gallery">
+                        <div class="collage">
+                            <div class="img-container">
+                                <img  src="assets/img/alessandro-fazari-DTHKBCJwY-k-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="img-container">
+                                <img  src="assets/img/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="img-container">
+                                <img  src="assets/img/aziz-acharki-PUvPZckRnOg-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="img-container">
+                                <img  src="assets/img/patrick-fore-YS_51ncQL5o-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="img-container">
+                                <img  src="assets/img/franz-harvin-aceituna-5EXMbjA6uGA-unsplash.jpg" alt="" srcset="">
+                            </div>
+                            <div class="img-container">
+                                <img  src="assets/img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- <div class="img-cards">
                     <div class="firstcard">
                         <div class="firstcard-img">
                             <img src="assets/img/vinicius-amnx-amano-DZ0MfTX_9sQ-unsplash.jpg" alt="" srcset="">
@@ -69,18 +103,9 @@
                         <h1>Pre-Production</h1>
                         <p>Satisfaction Guaranteed</p>
                     </div>
-                </div>
-                
-                <!-- <div class="collage-gallery">
-                    <div class="collage">
-                        <img  src="assets/img/alessandro-fazari-DTHKBCJwY-k-unsplash.jpg" alt="" srcset="">
-                        <img  src="assets/img/anton-van-der-weijst-a4eax-dOpkk-unsplash.jpg" alt="" srcset="">
-                        <img  src="assets/img/aziz-acharki-PUvPZckRnOg-unsplash.jpg" alt="" srcset="">
-                        <img  src="assets/img/patrick-fore-YS_51ncQL5o-unsplash.jpg" alt="" srcset="">
-                        <img  src="assets/img/franz-harvin-aceituna-5EXMbjA6uGA-unsplash.jpg" alt="" srcset="">
-                        <img  src="assets/img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg" alt="" srcset="">
-                    </div>
                 </div> -->
+                
+                
                 
                 <div class="services" id="services">
                     <div class="services-texts">
@@ -149,14 +174,14 @@
                     </div>
                 </div>  
                 
-                <div class="aboutus">
+                <div id="about" class="aboutus">
                     <h1>About Us</h1>
                     <img src="assets/img/david-sager-ScBDhIfrCDk-unsplash.jpg" alt="">
                     <br>
                     <br>
                     <p>We are a  Creative Media Production Company offering various Audio Visual production services. Our mission is to set a standard in the media industry through services which will not compromise the merits of creativity. We simply do not work as business associates with our clients, instead we believe in building a relationship with them first. This sense of togetherness helps us in exchanging ideas, knowledge and expertise  to come up with the needed support and solution in bringing our client’s vision to life.</p>
                 </div>
-
+                
                 <div id="contactus" class="contactus">
                     <h1>Let's Talk</h1>
                     <form method="POST"  action="email.php">
@@ -176,7 +201,7 @@
                 <footer>
                     <div class="copyrights">
                         All rights reserved. 
-                       <div class="developer"><a href=""> developed by - Peter Rai</a></div> 
+                        <div class="developer"><a href=""> developed by - Peter Rai</a></div> 
                     </div>
                     <div class="social-links">
                         <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
