@@ -559,8 +559,9 @@ width: 100%;
     }
     .second-header video{
         height: 100%;
-        transform: scaleX(1.3);
-    object-fit: fill;
+        /* transform: scaleX(1.3); */
+    object-fit: cover;
+    object-position: 64% 0%;
     }
     .second-header  .text{
         top: 45%;
