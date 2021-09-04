@@ -52,7 +52,7 @@ header{
     opacity: 0.9;
   }
   #navbar {
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: #333; */
   }
 
@@ -494,15 +494,19 @@ footer .social-links{
   }
   
 header .responsive{
-    height: 220px;
-    position: relative;
+    /* height: 220px; */
+    /* position: relative; */
     /* transition: all ease 1s ease-in-out; */
 }
     .topnav.responsive ul{
         flex-direction: column;
         position: absolute;
+        z-index: 1000;
 top: 4.3em;
-margin-left: 36%;
+background-color: red;
+height: 220px;
+width: 100%;
+/* margin-left: 36%; */
 
 }
     .topnav.responsive ul li{
