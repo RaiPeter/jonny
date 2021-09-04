@@ -61,11 +61,22 @@ nav h1{
 margin-left: 1em;
 }
 nav{
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
+}
+nav .logo{
+    height: 80px;
+    /* width: 150px; */
+    margin-left: 20px;
+}
+nav .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 nav ul{
     list-style: none;
@@ -75,7 +86,7 @@ nav ul{
     margin-right: 1em;
 }
 nav ul li{
-    margin-left: 20px;
+    margin-left: 50px;
 }
 nav a{
     text-decoration: none;
@@ -264,6 +275,7 @@ transition: all ease-in-out 0.5s;
 .services .service-cards{
 display: flex; 
 justify-content: space-between;
+padding: 0 20px 0 20px;
 }
 .services .services-texts{
  width: 100%;
@@ -320,6 +332,7 @@ color: white;
 .ourclients-cards{
     width: 100%;
     display: flex;
+    padding: 0 20px;
     justify-content: space-between;
 }
 .ourclient-card {
@@ -336,12 +349,12 @@ color: white;
     height: 420px;
 }
 .ourclient-card h1{
-    margin-top: 4em;
+    margin-top: 1em;
     font-size: 1.5em;
     color: var(--pink);
 }
 .ourclient-card p{
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 1em;
     /* color: var(--brown); */
     
@@ -349,7 +362,13 @@ color: white;
 .ourclient-card-img img{
 filter: grayscale(100%);
 width: 100%;
-transform: translateY(-20%);
+height: 100%;
+object-fit: cover;
+/* transform: translateY(-20%); */
+}
+
+.ourclient-card-img img:hover{
+    filter: grayscale(0%);
 }
 
 /* contact us */
@@ -486,10 +505,19 @@ footer .social-links{
         position: relative;
     }
     .topnav.responsive a.icon {
-      position: absolute;
+      /* position: absolute; */
       /* right: -125%; */
-      right: 0.5em;
-      top: 1.2em;
+      /* right: 0.5em; */
+      /* top: 1.2em; */
+    }
+    .topnav .logo{
+            height: 65px;
+            /* width: 120px; */
+    }
+    .topnov .logo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .topnav.responsive a {
       display: block;
@@ -504,7 +532,7 @@ header .responsive{
         flex-direction: column;
         position: absolute;
         z-index: 1000;
-top: 4.3em;
+top: 5em;
 background-color: black;
 height: 220px;
 width: 100%;
@@ -513,6 +541,9 @@ width: 100%;
 }
     .topnav.responsive ul li{
         margin-bottom: 1em;
+    }
+    nav ul li{
+        margin-left: 0;
     }
     .second-header h1{
         font-size: 1.8em;
@@ -536,6 +567,10 @@ width: 100%;
     }
     .collage .img-container{
     width: 100%;
+    }
+
+    .work{
+        margin-top: 25px;
     }
 
     .work .work-texts h1{
