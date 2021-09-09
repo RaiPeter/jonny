@@ -119,7 +119,7 @@ nav a:hover{
 
 .second-header .text{
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     width: 80%;
     transform: translate(-50%,-50%);
